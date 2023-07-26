@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- set `maximum-scale` for some compatibility issues -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+  <!-- <script src="https://cdn.bootcss.com/babel-polyfill/6.23.0/polyfill.min.js"></script> -->
+    <!-- <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.3.2.js"></script> -->
+
+  <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/antd-mobile@5.14.3/bundle/style.css">
+  <script>
+    if ('addEventListener' in document) {
+      document.addEventListener('DOMContentLoaded', function() {
+        FastClick.attach(document.body);
+      }, false);
+    }
+    if(!window.Promise) {
+      document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"'+'>'+'<'+'/'+'script>');
+    }
+  </script>
+  <style>
+    body{
+     padding: 0;
+     margin: 0;
+    }
+    .adm-image-img{
+      background-color: #fff;
+    }
+    .adm-nav-bar{
+      background-color: #fff;
+    }
+    :root:root {
+      --adm-color-primary: #0151f8;
+      --adm-color-success: #00b578;
+      --adm-color-warning: #ff8f1f;
+      --adm-color-danger: #ff3141;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div id="root"></div>
+</body>
+</html>
+
+
